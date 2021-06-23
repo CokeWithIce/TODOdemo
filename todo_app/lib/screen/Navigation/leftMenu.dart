@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import './leftMenu4User.dart';
-import './leftMenu4MainTree.dart';
+import 'leftMenu4User.dart';
+import 'leftMenu4MainTree.dart';
 import './leftMenu4SelfTree.dart';
+import 'package:todoapp/service/leftMenuService.dart';
 
 
 class leftMenu extends StatefulWidget {
@@ -19,18 +20,13 @@ class _leftMenuState extends State<leftMenu> {
     // TODO: implement build
     return ListView(
       children: <Widget>[
-//        leftMenu4User(),
-//        leftMenu4MainTree(),
+        leftMenu4User(),
+        leftMenu4MainTree(),
         DecoratedBox(
           decoration: BoxDecoration(
               border: Border.all(color: Colors.grey[300], width: 1.0)),
         ),
-//        leftMenu4SelfTree(),
-        Positioned(
-          left:10,
-          bottom: 10,
-          child:Text('233'),
-        )
+        leftMenu4SelfTree(),
       ],
     );
   }

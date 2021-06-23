@@ -43,6 +43,8 @@ dependencies:
   path_provider: ^0.4.1
     #  本地数据库加载
   sqflite: ^1.1.6+4
+    #  getx导入
+  get:
 
 dev_dependencies:
   flutter_test:
